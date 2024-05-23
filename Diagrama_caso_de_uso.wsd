@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+
+actor "Facturador" as Fact
+
+rectangle "Sistema de Gestión de factura" {
+    usecase "Cliente" as RF1
+    usecase "Factura cliente" as RF2
+    usecase "Detalle factura" as RF3
+    usecase "Producto" as RF4
+    usecase "Inventario" as RF5
+}
+
+Fact --> RF1 : Cliente
+Fact --> RF2 : Factura cliente
+Fact --> RF3 : Detalle factura
+Fact --> RF4 : Producto
+Fact --> RF5 : Inventario
+
+@enduml
